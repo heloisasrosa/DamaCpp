@@ -1,0 +1,40 @@
+# Jogo de Damas 
+
+
+## OBJETIVOS
+Construir um jogo de damas com versão para single player e dois jogadores.
+
+## RECURSOS NECESSÁRIOS
+compilador g++, biblioteca padrão c/c++ 
+
+## COMO EXECUTAR ESTE PROGRAMA
+Execute `make` para compilar (opcionalmente, execute `make clean` antes), depois execute os principais verificadores de programa usando `. / Checkers`
+
+_________________________
+##RESUMO DAS CLASSES
+
+### HumanPlayer
+Responsável por interagir com o jogador, a fim de determinar seu movimento e aplicá-lo ao tabuleiro.
+
+Nota: a proposta foi alterada aqui: os movimentos agora são identificados, exibindo os possíveis para o usuário e fazendo com que ele escolha nessa lista.
+
+### AIPlayer
+Responsável pelo uso da inteligência artificial para determinar uma jogada eficaz e aplicá-la ao conselho.
+
+### Board
+Armazena e permite a manipulação do tabuleiro e das peças do jogo.
+
+### Piece
+Responsável por armazenar dados associados a uma determinada peça e determinar suas propriedades, como movimentos disponíveis.
+
+### Move
+Armazena dados associados à movimentação de uma peça e métodos para determinar outras propriedades.
+
+### Typedef.h
+Armazena algumas definições de tipo necessárias em certos aspectos do programa.
+
+### As classes restantes podem ser resumidas da seguinte forma:
+#### Player)
+Responsável por descrever métodos compartilhados das classes HumanPlayer e AIPlayer para que possam ser usados ​​de forma mutua.
+
+A IA foi reaproveitada e se baseia no tutorial anexo a pasta DOC, junto deste MakeFile.
